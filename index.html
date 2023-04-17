@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">    
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header id="cabeca" class="topo">
+            <img id="imglogo" src="./img/logo.png" alt="logo alura">
+            <h1>Encriptar e decriptar textos</h1>
+    </header>
+
+    <main class="box">
+        <div class="box-in-out">
+            
+            <div class="box-in">
+                <label for="entrada-cripto"></label>
+                <p id="condicao">Não utilize acentuação gráfica. 
+                    Seu texto será convertido para letras minúsculas.</p><br><br>
+                <textarea name="entrada-cripto" id="entrada-cripto" cols="70" rows="10" 
+                    placeholder="Digite seu texto" autofocus></textarea>
+
+                
+
+                <input class="btn-encriptar" type="submit" value="Encriptar">
+                <input class="btn-decriptar" type="submit" value="Decriptar">
+            </div>
+            
+            <div class="box-out">
+
+                <div id="resultado-cripto">
+                    <p class="texto-cripto-descripto">Nenhuma resultado a apresentar</p>
+                    <span class="retirar">Digite o texto a encriptar ou decriptar.</span>
+                </div>
+            
+            </div>
+
+            <div class="resultado-box-out">
+                <input class="btn-copiar" type="submit" value="Copiar">
+            </div>            
+        </div>
+        <div class="button"></div>
+    </main>
+    <script src="./js/codigo.js"></script>
+</body>
+</html>
